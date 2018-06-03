@@ -6,7 +6,7 @@
 #    By: ybokina <ybokina@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/20 16:33:43 by ybokina           #+#    #+#              #
-#    Updated: 2018/05/01 14:39:06 by ybokina          ###   ########.fr        #
+#    Updated: 2018/06/03 18:26:50 by ybokina          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ HEADER = libft.h
 OBJ = $(SOURCES:.c=.o)
 
 $(NAME):
-	gcc $(FLAGS) -c $(SOURCES)
+	@gcc $(FLAGS) -c $(SOURCES)
 	@ar rc $(NAME) $(OBJ)
 
 all: $(NAME)

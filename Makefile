@@ -28,6 +28,7 @@ all: $(NAME)
 $(NAME):
 	@make -C libft
 	@gcc $(FLAGS) -o $(NAME) $(SOURCES) $(LIBA)
+	@echo "\033[48;5;7m\033[31m\033[5mDone: ./ft_ls is created."
 
 clean:
 	@make -C libft clean
